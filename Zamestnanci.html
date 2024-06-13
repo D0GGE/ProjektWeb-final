@@ -19,12 +19,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav col-6 offset-3">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Hlavní stránka</a>
+            <a class="nav-link active" href="index.html">Hlavní stránka</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="Zamestnanci.html">Zaměstnanci</a>
+            <a class="nav-link" href="Zamestnanci.html">Zaměstnanci</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -43,38 +43,38 @@
             Přihlášení 
           </button>
         </div>
-
+        
         <!-- The Modal -->
         <div class="modal" id="Modal1">
           <div class="modal-dialog">
             <div class="modal-content">
-
+        
               <!-- Modal Header -->
               <div class="modal-header">
                 <h4 class="modal-title text-white">Přihlášení</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-
+        
               <!-- Modal body -->
               <div class="modal-body">
                 <form>
                   <div class="">
-                    <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
-                    <input type="text" id="fname" class="form-control" name="fname"><br>
+                      <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
+                      <input type="text" id="fname" class="form-control" name="fname"><br>
                   </div>
                   <div class="">
-                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
-                    <input type="password" id="lname" class="form-control" name="lname"><br>
+                      <label for="Lname" class="form-label text-white">Heslo:</label><br>
+                      <input type="password" id="lname" class="form-control" name="lname"><br>
                   </div>
-                </form>
+              </form>
               </div>
-
+        
               <!-- Modal footer -->
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
               </div>
-
+        
             </div>
           </div>
         </div>
@@ -83,52 +83,73 @@
             Registrace
           </button>
         </div>
-
+        
         <!-- The Modal -->
         <div class="modal" id="Modal2">
           <div class="modal-dialog">
             <div class="modal-content">
-
+        
               <!-- Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title text-white">Úprava</h4>
+                <h4 class="modal-title text-white">Registrace</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-
+        
               <!-- Modal body -->
               <div class="modal-body">
                 <form>
                   <div class="">
-                    <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
-                    <input type="text" id="fname" class="form-control" name="fname"><br>
+                      <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
+                      <input type="text" id="fname" class="form-control" name="fname"><br>
                   </div>
                   <div class="">
-                    <label for="Fname" class="form-label text-white">Jméno:</label><br>
-                    <input type="text" id="fname" class="form-control" name="lname"><br>
+                      <label for="Fname" class="form-label text-white">Jméno:</label><br>
+                      <input type="text" id="fname" class="form-control" name="lname"><br>
                   </div>
                   <div class="">
-                    <label for="Lname" class="form-label text-white">Příjmení:</label><br>
-                    <input type="text" id="lname" class="form-control" name="lname"><br>
+                      <label for="Lname" class="form-label text-white">Příjmení:</label><br>
+                      <input type="text" id="lname" class="form-control" name="lname"><br>
                   </div>
-
+                  
                   <div class="">
-                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
-                    <input type="password" id="lname" class="form-control" name="lname"><br>
-                  </div>
-                  <div class="">
-                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
-                    <input type="password" id="lname" class="form-control" name="lname"><br>
-                  </div>
-                </form>
+                    <label for="Lname" class="form-label text-white">Email:</label><br>
+                    <input type="text" id="email" class="form-control" name="email"><br>
+                </div>
+                <div class="mb-3">
+                  <label for="date">Rok narození</label>
+                  <select name="date" id="date" class="form-select text-black " required="">
+                      <option value="" disabled="" selected="">----</option>
+                      <option value="cz">Česko</option>
+                      <option value="sk">Slovenko</option>
+                      <option value="de">Německo</option>
+                      <option value="pl">Polsko</option>
+                      <option value="R">Rakousko</option>
+                      <option value="M">Maďarsko</option>
+                      <option value="U">Ukrajina</option>
+                      <option value="I">Itálie</option>
+                      <option value="F">Francie</option>
+                      <option value="CH">Chorvatsko</option>
+                  </select><br>
               </div>
-
+                  
+                  <div class="">
+                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
+                    <input type="password" id="lname" class="form-control" name="lname"><br>
+                </div>
+                <div class="">
+                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
+                    <input type="password" id="lname" class="form-control" name="lname"><br>
+                </div>
+              </form>
+              </div>
+        
               <!-- Modal footer -->
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
               </div>
-            </div>
-          </div>
+      </div>
+    </div>
   </nav>
   <div class="row container-fluid">
     <H1 class=" m-5 mx-auto text-center">Náš tým</H1>
@@ -159,10 +180,8 @@
         <img class="col-6 rounded-5 m-auto" style="width: 300px;" src="Imadzis/spolu_dgff.png" alt="spolubbay">
       </div>
 
-    </div>
-    <div class="row">
       <div class="col">
-        <img class="col-6 rounded-5 mx-auto" style="width: 300px;" src="Imadzis/DGF.jpg" alt="spolubbay">
+        <img class="col-6 rounded-5 offset-2" style="width: 300px;" src="Imadzis/DGF.jpg" alt="spolubbay">
       </div>
       <div class="col p-5 m-5 mx-auto container ">
         <p>
@@ -174,8 +193,7 @@
       </div>
 
 
-    </div>
-    <div class="row">
+    
       <div class="col p-5 m-5 mx-auto container ">
         <p>
 
@@ -189,8 +207,6 @@
         <img class="col-6 rounded-5 mx-auto" style="width: 300px;" src="Imadzis/Werkyscerealie.png" alt="spolubbay">
       </div>
 
-    </div>
-    <div class="row">
       <div class="col">
         <img class="col-6 rounded-5 mx-auto" style="width: 300px;" src="Imadzis/DrunkDogge.jpg" alt="spolubbay">
       </div>
@@ -204,9 +220,6 @@
         </p>
       </div>
 
-
-    </div>
-    <div class="row">
       <div class="col p-5 m-5 mx-auto container ">
         <p>
 
@@ -220,12 +233,65 @@
       <div class="col">
         <img class="col-6 rounded-5 mx-auto" style="width: 300px;" src="Imadzis/Doggerohliknuttela.jpg" alt="spolubbay">
       </div>
-
-    
+    </div>
   </div>
 
 
+  <div class="container-sm">
+    <div class="row">
 
+      <div class="col-6 m-auto">
+        <p>
+
+        <h4>Podpora rozvoje: </h4>
+        Vedení restaurace podporuje rozvoj svých zaměstnanců a nabízí možnosti profesního růstu a
+        dalšího vzdělávání. Zaměstnanci mají příležitost se neustále zdokonalovat a rozvíjet své dovednosti.
+        </p>
+      </div>
+      <div class="pt-3 col-6 text-center">
+        <img class="rounded-5" style="width: 300px;" src="Imadzis/spolu_dgff.png" alt="spolubbay">
+      </div>
+
+      <div class="pt-3 col-6 text-center">
+        <img class="rounded-5" style="width: 300px;" src="Imadzis/DGF.jpg" alt="spolubbay">
+      </div>
+      <div class="col-6 m-auto">
+        <p>
+
+        <h4> Otevřená komunikace: </h4>
+        Vedení DGF klade důraz na otevřenou a průhlednou komunikaci s zaměstnanci. Každý
+        zaměstnanec má možnost vyjádřit své názory, připomínky nebo připomínky a cítí se slyšen a respektován.
+        </p>
+      </div>
+
+      <div class="col-6 m-auto">
+        <p>
+
+        <h4>Týmová spolupráce:</h4>
+
+        Veškerá práce v restauraci DGF je založena na týmové spolupráci. Vedení podporuje
+        harmonické vztahy mezi zaměstnanci a vytváří prostředí, kde se každý cítí jako nedílná součást týmu.
+        </p>
+      </div>
+      <div class="pt-3 col-6 text-center">
+        <img class="col-6 rounded-5 mx-auto" style="width: 300px;" src="Imadzis/Werkyscerealie.png" alt="spolubbay">
+      </div>
+
+      <div class="pt-3 col-6 text-center">
+        <img class="rounded-5" style="width: 300px;" src="Imadzis/DrunkDogge.jpg" alt="spolubbay">
+      </div>
+      <div class="col-6 m-auto">
+        <p>
+
+        <h4>Dodržování pracovních standardů: </h4>
+        Vedení DGF klade důraz na dodržování pracovních standardů a kvality služeb.
+        Zaměstnanci jsou motivováni k poskytování vynikajícího zákaznického servisu a k dodržování hygienických a
+        bezpečnostních předpisů.
+        </p>
+      </div>
+
+
+    </div>
   </div>
 </body>
 
