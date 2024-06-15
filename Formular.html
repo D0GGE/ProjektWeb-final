@@ -12,24 +12,24 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="Imadzis/DGF.jpg" alt="" width="80px" height="auto"></a>
+            <a class="navbar-brand  ms-lg-5 ps-lg-5" href="index.html"><img src="Imadzis/DGF.jpg" alt="" width="80px" height="auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Hlavní stránka</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Zamestnanci.html">Zaměstnanci</a>
+                        <a class="nav-link" href="tabulka.html">Menu</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            aria-haspopup="true" aria-expanded="false">Další</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="tabulka.html">Menu</a>
+                            <a class="dropdown-item " href="Zamestnanci.html">Zaměstnanci</a>
                             <a class="dropdown-item active" href="Formular.html">Podpora</a>
                         </div>
                     </li>
@@ -40,18 +40,18 @@
                         Přihlášení 
                     </button>
                 </div>
-
+    
                 <!-- The Modal -->
                 <div class="modal" id="Modal1">
                     <div class="modal-dialog">
                         <div class="modal-content">
-
+    
                             <!-- Modal Header -->
                             <div class="modal-header">
                                 <h4 class="modal-title text-white">Přihlášení</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
-
+    
                             <!-- Modal body -->
                             <div class="modal-body">
                                 <form>
@@ -65,13 +65,13 @@
                                     </div>
                                 </form>
                             </div>
-
+    
                             <!-- Modal footer -->
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
@@ -80,18 +80,18 @@
                         Registrace
                     </button>
                 </div>
-
+    
                 <!-- The Modal -->
                 <div class="modal" id="Modal2">
                     <div class="modal-dialog">
                         <div class="modal-content">
-
+    
                             <!-- Modal Header -->
                             <div class="modal-header">
                                 <h4 class="modal-title text-white">Registrace</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
-
+    
                             <!-- Modal body -->
                             <div class="modal-body">
                                 <form>
@@ -107,7 +107,7 @@
                                         <label for="Lname" class="form-label text-white">Příjmení:</label><br>
                                         <input type="text" id="lname" class="form-control" name="lname"><br>
                                     </div>
-
+    
                                     <div class="">
                                         <label for="Lname" class="form-label text-white">Email:</label><br>
                                         <input type="text" id="email" class="form-control" name="email"><br>
@@ -128,7 +128,7 @@
                                             <option value="CH">Chorvatsko</option>
                                         </select><br>
                                     </div>
-
+    
                                     <div class="">
                                         <label for="Lname" class="form-label text-white">Heslo:</label><br>
                                         <input type="password" id="lname" class="form-control" name="lname"><br>
@@ -139,7 +139,7 @@
                                     </div>
                                 </form>
                             </div>
-
+    
                             <!-- Modal footer -->
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
@@ -149,25 +149,27 @@
                     </div>
     </nav>
     <div class="container-sm">
+        <div class="container mt-5 col-8 offset-2">
+            <h2>Máte potíže?</h2>
+            <p>nebojte se nám napsat, jestli se s něčím trápíte, nebo nemůže najít zrovna co hledáte</p>
+            <form action="">
+                <div class="mb-3 mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="comment">Dotaz</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Odeslat</button>
+            </form>
+        </div>
 
 
     </div>
 
-    <div class="container mt-3">
-        <h2>Pošlete nám zprávu</h2>
-        <form action="">
-            <div class="mb-3 mt-3">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="mb-3">
-                <label for="comment">Dotaz</label>
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Odeslat</button>
-        </form>
-    </div>
+   
 </body>
 
 </html>

@@ -11,144 +11,142 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="Imadzis/DGF.jpg" alt="" width="80px" height="auto"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Hlavní stránka</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Zamestnanci.html">Zaměstnanci</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item active" href="tabulka.html">Menu</a>
-              <a class="dropdown-item" href="Formular.html">Podpora</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <button type="button" class="btn btn-secondary d-flex " data-bs-toggle="modal" data-bs-target="#Modal1">
-            Přihlášení 
+      <div class="container-fluid">
+          <a class="navbar-brand  ms-lg-5 ps-lg-5" href="index.html"><img src="Imadzis/DGF.jpg" alt="" width="80px" height="auto"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+              aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        
-        <!-- The Modal -->
-        <div class="modal" id="Modal1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-        
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title text-white">Přihlášení</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Hlavní stránka</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="tabulka.html">Menu</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                          aria-haspopup="true" aria-expanded="false">Další</a>
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item " href="Zamestnanci.html">Zaměstnanci</a>
+                          <a class="dropdown-item " href="Formular.html">Podpora</a>
+                      </div>
+                  </li>
+              </ul>
+              <div class="d-flex">
+                  <button type="button" class="btn btn-secondary d-flex " data-bs-toggle="modal"
+                      data-bs-target="#Modal1">
+                      Přihlášení 
+                  </button>
               </div>
-        
-              <!-- Modal body -->
-              <div class="modal-body">
-                <form>
-                  <div class="">
-                      <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
-                      <input type="text" id="fname" class="form-control" name="fname"><br>
+
+              <!-- The Modal -->
+              <div class="modal" id="Modal1">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                              <h4 class="modal-title text-white">Přihlášení</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              <form>
+                                  <div class="">
+                                      <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
+                                      <input type="text" id="fname" class="form-control" name="fname"><br>
+                                  </div>
+                                  <div class="">
+                                      <label for="Lname" class="form-label text-white">Heslo:</label><br>
+                                      <input type="password" id="lname" class="form-control" name="lname"><br>
+                                  </div>
+                              </form>
+                          </div>
+
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
+                          </div>
+
+                      </div>
                   </div>
-                  <div class="">
-                      <label for="Lname" class="form-label text-white">Heslo:</label><br>
-                      <input type="password" id="lname" class="form-control" name="lname"><br>
+              </div>
+              <div class="d-flex">
+                  <button type="button" class="btn btn-info d-flex" data-bs-toggle="modal" data-bs-target="#Modal2">
+                      Registrace
+                  </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="Modal2">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                              <h4 class="modal-title text-white">Registrace</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              <form>
+                                  <div class="">
+                                      <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
+                                      <input type="text" id="fname" class="form-control" name="fname"><br>
+                                  </div>
+                                  <div class="">
+                                      <label for="Fname" class="form-label text-white">Jméno:</label><br>
+                                      <input type="text" id="fname" class="form-control" name="lname"><br>
+                                  </div>
+                                  <div class="">
+                                      <label for="Lname" class="form-label text-white">Příjmení:</label><br>
+                                      <input type="text" id="lname" class="form-control" name="lname"><br>
+                                  </div>
+
+                                  <div class="">
+                                      <label for="Lname" class="form-label text-white">Email:</label><br>
+                                      <input type="text" id="email" class="form-control" name="email"><br>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="date">Rok narození</label>
+                                      <select name="date" id="date" class="form-select text-black " required="">
+                                          <option value="" disabled="" selected="">----</option>
+                                          <option value="cz">Česko</option>
+                                          <option value="sk">Slovenko</option>
+                                          <option value="de">Německo</option>
+                                          <option value="pl">Polsko</option>
+                                          <option value="R">Rakousko</option>
+                                          <option value="M">Maďarsko</option>
+                                          <option value="U">Ukrajina</option>
+                                          <option value="I">Itálie</option>
+                                          <option value="F">Francie</option>
+                                          <option value="CH">Chorvatsko</option>
+                                      </select><br>
+                                  </div>
+
+                                  <div class="">
+                                      <label for="Lname" class="form-label text-white">Heslo:</label><br>
+                                      <input type="password" id="lname" class="form-control" name="lname"><br>
+                                  </div>
+                                  <div class="">
+                                      <label for="Lname" class="form-label text-white">Heslo:</label><br>
+                                      <input type="password" id="lname" class="form-control" name="lname"><br>
+                                  </div>
+                              </form>
+                          </div>
+
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
+                          </div>
+                      </div>
                   </div>
-              </form>
-              </div>
-        
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
-              </div>
-        
-            </div>
-          </div>
-        </div>
-        <div class="d-flex">
-          <button type="button" class="btn btn-info d-flex" data-bs-toggle="modal" data-bs-target="#Modal2">
-            Registrace
-          </button>
-        </div>
-        
-        <!-- The Modal -->
-        <div class="modal" id="Modal2">
-          <div class="modal-dialog">
-            <div class="modal-content">
-        
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title text-white">Registrace</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-        
-              <!-- Modal body -->
-              <div class="modal-body">
-                <form>
-                  <div class="">
-                      <label for="uname" class="form-label text-white ">Uživatelské jméno:</label><br>
-                      <input type="text" id="fname" class="form-control" name="fname"><br>
-                  </div>
-                  <div class="">
-                      <label for="Fname" class="form-label text-white">Jméno:</label><br>
-                      <input type="text" id="fname" class="form-control" name="lname"><br>
-                  </div>
-                  <div class="">
-                      <label for="Lname" class="form-label text-white">Příjmení:</label><br>
-                      <input type="text" id="lname" class="form-control" name="lname"><br>
-                  </div>
-                  
-                  <div class="">
-                    <label for="Lname" class="form-label text-white">Email:</label><br>
-                    <input type="text" id="email" class="form-control" name="email"><br>
-                </div>
-                <div class="mb-3">
-                  <label for="date">Rok narození</label>
-                  <select name="date" id="date" class="form-select text-black " required="">
-                      <option value="" disabled="" selected="">----</option>
-                      <option value="cz">Česko</option>
-                      <option value="sk">Slovenko</option>
-                      <option value="de">Německo</option>
-                      <option value="pl">Polsko</option>
-                      <option value="R">Rakousko</option>
-                      <option value="M">Maďarsko</option>
-                      <option value="U">Ukrajina</option>
-                      <option value="I">Itálie</option>
-                      <option value="F">Francie</option>
-                      <option value="CH">Chorvatsko</option>
-                  </select><br>
-              </div>
-                  
-                  <div class="">
-                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
-                    <input type="password" id="lname" class="form-control" name="lname"><br>
-                </div>
-                <div class="">
-                    <label for="Lname" class="form-label text-white">Heslo:</label><br>
-                    <input type="password" id="lname" class="form-control" name="lname"><br>
-                </div>
-              </form>
-              </div>
-        
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Potvrdit</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zrušit</button>
-              </div>
-      </div>
-    </div>
   </nav>
       <div class="container-sm">
 
